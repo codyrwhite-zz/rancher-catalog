@@ -1,5 +1,5 @@
-name: Plex Media Server
-description: Plex organizes your video, music, and photo collections and streams them to all of your screens.
+name: Plex Media Server (plexpass build)
+description: Plex organizes your video, music, and photo collections and streams them to all of your screens. plexinc/pms-docker:plexpass
 category: Organize
 version: 1.0
 maintainer: Cody White <codyrwhite@icloud.com>
