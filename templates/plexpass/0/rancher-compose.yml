@@ -1,0 +1,10 @@
+.catalog:
+  name: "plexpass"
+  version: "1.0"
+  description: "Plex Media Server - PlexPass Build"
+  uuid: plexpass-0
+app:
+  scale: 1
+data:
+  scale: 1
+  tty: true
