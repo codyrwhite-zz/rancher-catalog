@@ -7,7 +7,7 @@
   maintainer: "Cody White <CodyRWhite@icloud.com>"
   uuid: plexpass-0
 questions:
-    - variable: "/config"
+    - variable: "config"
       description: |
         Config storage space. 
       label: "Config:"
@@ -15,7 +15,7 @@ questions:
       required: false
       type: "string"
     
-    - variable: "/transcode"
+    - variable: "transcode"
       description: |
         Video transcode directory. 
       label: "Transcode:"
@@ -23,7 +23,7 @@ questions:
       required: false
       type: "string"
     
-    - variable: "/data"
+    - variable: "data"
       description: |
         IP/mask[,IP/mask].
       label: "Data:"
