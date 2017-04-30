@@ -34,6 +34,13 @@
           label: "Time Zone:"
           required: false
           default: ""
+          type: "string"     
+        - variable: "ADVERTISE_IP"
+          description: |
+            http://<hostIPAddress>:32400/.
+          label: "Advertise IP:"
+          required: false
+          default: ""
           type: "string"          
 app:
   scale: 1
