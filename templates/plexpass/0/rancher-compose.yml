@@ -14,6 +14,27 @@
           default: ""
           required: false
           type: "string"        
+        - variable: "transcode"
+          description: |
+            Video transcode directory. 
+          label: "Transcode:"
+          default: ""
+          required: false
+          type: "string"        
+        - variable: "data"
+          description: |
+            Media volume.
+          label: "Data:"
+          required: false
+          default: ""
+          type: "string"
+        - variable: "TZ"
+          description: |
+            Timezone - eg Europe/London.
+          label: "Time Zone:"
+          required: false
+          default: ""
+          type: "string"          
 app:
   scale: 1
 data:
