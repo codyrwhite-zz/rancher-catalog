@@ -11,7 +11,7 @@ app:
     - "32412:32414/udp"
   networks:
     app_net:
-      ipv4_address: ${ADVERTISE_IP}
+      ipv4_address: 10.0.1.7
   cap_drop:
     - NET_ADMIN
   volume_driver: nfs-driver
@@ -23,3 +23,11 @@ app:
     depot.lb.link: true
     depot.lb.port: 32400
     depot.app.type: plexpass
+networks:
+  app_net:
+    driver: bridge
+    enable_ipv6: false
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.0.1.0/24
