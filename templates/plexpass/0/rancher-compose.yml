@@ -1,83 +1,83 @@
 .catalog:
-  name: "plexpass"
-  description: |
-    Plex organizes your video, music, and photo collections and streams them to all of your screens. plexinc/pms-docker:plexpass.
-  version: "Latest (Auto Update)"
-  description: "Plex Media Server - PlexPass Build"
-  maintainer: "Cody White <CodyRWhite@icloud.com>"
-  uuid: plexpass-0
-questions:
-    - variable: "config"
-      description: |
-        Config storage space. 
-      label: "Config:"
-      default: ""
-      required: false
-      type: "string"
-    
-    - variable: "transcode"
-      description: |
-        Video transcode directory. 
-      label: "Transcode:"
-      default: ""
-      required: false
-      type: "string"
-    
-    - variable: "data"
-      description: |
-        IP/mask[,IP/mask].
-      label: "Data:"
-      required: false
-      default: ""
-      type: "string"
+    name: "plexpass"
+    description: |
+     Plex organizes your video, music, and photo collections and streams them to all of your screens. plexinc/pms-docker:plexpass.
+    version: "Latest (Auto Update)"
+    description: "Plex Media Server - PlexPass Build"
+    maintainer: "Cody White <CodyRWhite@icloud.com>"
+    uuid: plexpass-0
+    questions:
+        - variable: "config"
+          description: |
+            Config storage space. 
+          label: "Config:"
+          default: ""
+          required: false
+          type: "string"
+        
+        - variable: "transcode"
+          description: |
+            Video transcode directory. 
+          label: "Transcode:"
+          default: ""
+          required: false
+          type: "string"
+        
+        - variable: "data"
+          description: |
+            IP/mask[,IP/mask].
+          label: "Data:"
+          required: false
+          default: ""
+          type: "string"
 
-      - variable: "TZ"
-      description:  |
-        Timezone - eg Europe/London.
-      label: "Time Zone:"
-      required: false
-      default: ""
-      type: "string"
-      
-    - variable: "ADVERTISE_IP"
-      description:  |
-        http://<hostIPAddress>:32400/.
-      label: "Advertise IP:"
-      required: false
-      default: ""
-      type: "string"
+          - variable: "TZ"
+          description:  |
+            Timezone - eg Europe/London.
+          label: "Time Zone:"
+          required: false
+          default: ""
+          type: "string"
+          
+        - variable: "ADVERTISE_IP"
+          description:  |
+            http://<hostIPAddress>:32400/.
+          label: "Advertise IP:"
+          required: false
+          default: ""
+          type: "string"
 
-    - variable: "ALLOWED_NETWORKS"
-      description:  |
-        IP/mask[,IP/mask].
-      label: "Allowed Networks:"
-      required: false
-      default: ""
-      type: "string"      
+        - variable: "ALLOWED_NETWORKS"
+          description:  |
+            IP/mask[,IP/mask].
+          label: "Allowed Networks:"
+          required: false
+          default: ""
+          type: "string"      
 
-      - variable: "PLEX_UID"
-      description:  |
-        Plex User ID.
-      label: "UID:"
-      required: false
-      default: ""
-      type: "string"
-      
-    - variable: "PLEX_GID"
-      description:  |
-        Plex Group ID.
-      label: "GID:"
-      required: false
-      default: ""
-      type: "string"
+          - variable: "PLEX_UID"
+          description:  |
+            Plex User ID.
+          label: "UID:"
+          required: false
+          default: ""
+          type: "string"
+          
+        - variable: "PLEX_GID"
+          description:  |
+            Plex Group ID.
+          label: "GID:"
+          required: false
+          default: ""
+          type: "string"
 
-    - variable: "PLEX_CLAIM"
-      description:  |
-        Plex Account Token.
-      label: "Claim:"
-      required: false
-      default: ""
-      type: "string"
+        - variable: "PLEX_CLAIM"
+          description:  |
+            Plex Account Token.
+          label: "Claim:"
+          required: false
+          default: ""
+          type: "string"
  app:
   scale: 1
 data:
