@@ -23,9 +23,3 @@ app:
     depot.lb.link: true
     depot.lb.port: 32400
     depot.app.type: plexpass
-networks:
-  app_net:
-    driver: bridge
-    ipam:
-     config:
-       - subnet: 10.0.1.0/24
