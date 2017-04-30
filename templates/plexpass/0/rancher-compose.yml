@@ -13,21 +13,21 @@
           label: "Config:"
           default: ""
           required: false
-          type: "string"        
+          type: "service"        
         - variable: "transcode"
           description: |
             Video transcode directory
           label: "Transcode:"
           default: ""
           required: false
-          type: "string"        
+          type: "service"        
         - variable: "data"
           description: |
             Media volume
           label: "Data:"
           required: false
           default: ""
-          type: "string"
+          type: "service"
         - variable: "TZ"
           description: |
             Timezone - eg Europe/London
