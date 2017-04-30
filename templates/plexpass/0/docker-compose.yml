@@ -2,25 +2,32 @@ app:
   restart: always
   image: plexinc/pms-docker:plexpass
   ports:
-   - "32400:32400"
-  net: "host"
+   - "32400:32400/tcp"
+   - "3005:3005/tcp"
+   - "8324:8324/tcp"
+   - "32469:32469/tcp"
+   - "1900:1900/udp"
+   - "32410:32410/udp"
+   - "32412:32414/udp"
+   networks:
+      app_net:
+        ipv4_address: ${ADVERTISE_IP}
   cap_drop:
     - NET_ADMIN
   volumes_from:
   - data
   volumes:
-  - /media/storage/tvshows:/mnt/tvshows
-  - /media/storage/movies:/mnt/movies
-  - /media/storage/music:/mnt/music
+  - /config:${/config}
+  - /transcode:${/transcode}
+  - /data:${/data}
   labels:
     io.rancher.sidekicks: data
     depot.lb.link: true
     depot.lb.port: 32400
     depot.app.type: plexpass
-data:
-  image: plexinc/pms-docker:plexpass
-  labels:
-    io.rancher.container.start_once: true
-  volumes:
-  - /srv/plexpass/config
-  - /srv/plexpass/data
+
+networks:
+  app_net:
+    driver: bridge
+    enable_ipv6: false
+    external: true
