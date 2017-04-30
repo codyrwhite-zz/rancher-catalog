@@ -55,7 +55,7 @@
           default: ""
           type: "string"      
 
-          - variable: "PLEX_UID"
+        - variable: "PLEX_UID"
           description:  |
             Plex User ID.
           label: "UID:"
