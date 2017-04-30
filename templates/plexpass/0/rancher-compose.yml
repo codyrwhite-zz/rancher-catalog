@@ -11,7 +11,7 @@
           description: |
             Config storage space
           label: "Config:"
-          default: ""
+          default: "/mnt/Datastore/configs/pms"
           required: false
           type: "string"        
         - variable: "transcode"
@@ -26,21 +26,21 @@
             Media volume
           label: "Data:"
           required: false
-          default: ""
+          default: "/mnt/Storage/Media"
           type: "string"
         - variable: "TZ"
           description: |
             Timezone - eg Europe/London
           label: "Time Zone:"
           required: false
-          default: ""
+          default: "America/Toronto"
           type: "string"     
         - variable: "ADVERTISE_IP"
           description: |
             http://<hostIPAddress>:32400/
           label: "Advertise IP:"
           required: false
-          default: ""
+          default: "10.0.1.7"
           type: "string" 
         - variable: "ALLOWED_NETWORKS"
           description: |
@@ -54,14 +54,14 @@
             Plex User ID
           label: "UID:"
           required: false
-          default: ""
+          default: "1000"
           type: "string"          
         - variable: "PLEX_GID"
           description: |
             Plex Group ID
           label: "GID:"
           required: false
-          default: ""
+          default: "1000"
           type: "string"
         - variable: "PLEX_CLAIM"
           description: |
