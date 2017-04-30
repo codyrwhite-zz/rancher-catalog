@@ -7,9 +7,9 @@ app:
     - NET_ADMIN
   volume_driver: nfs-driver
   volumes:
-    - /config:${config}
-    - /transcode:${transcode}
-    - /data:${data}
+    - ${config}:/config:
+    - ${transcode}:/transcode:
+    - ${data}:/data:
   labels:
     depot.lb.link: true
     depot.lb.port: 32400
