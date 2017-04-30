@@ -18,7 +18,7 @@
           description: |
             Video transcode directory
           label: "Transcode:"
-          default: ""
+          default: "/mnt/Datastore/transcode"
           required: false
           type: "string"        
         - variable: "data"
