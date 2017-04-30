@@ -41,7 +41,14 @@
           label: "Advertise IP:"
           required: false
           default: ""
-          type: "string"     
+          type: "string" 
+        - variable: "ALLOWED_NETWORKS"
+          description: |
+            IP/mask[,IP/mask]
+          label: "Allowed Networks:"
+          required: false
+          default: ""
+          type: "string"          
         - variable: "PLEX_UID"
           description: |
             Plex User ID
