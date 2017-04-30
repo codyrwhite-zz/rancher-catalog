@@ -14,12 +14,11 @@ app:
         ipv4_address: ${ADVERTISE_IP}
   cap_drop:
     - NET_ADMIN
-  volumes_from:
-  - data
+  volume_driver: nfs-driver
   volumes:
-  - /config:${config}
-  - /transcode:${transcode}
-  - /data:${data}
+  - config:${config}
+  - transcode:${transcode}
+  - data:${data}
   labels:
     io.rancher.sidekicks: data
     depot.lb.link: true
