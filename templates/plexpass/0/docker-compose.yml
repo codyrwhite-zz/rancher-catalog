@@ -5,7 +5,7 @@ app:
     - "32400:32400/tcp"
   cap_drop:
     - NET_ADMIN
-  volume_driver: rancher-nfs
+  volume_driver: nfs-driver
   volumes:
     - ${config}:/config
     - ${transcode}:/transcode
