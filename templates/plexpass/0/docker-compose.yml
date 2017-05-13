@@ -10,7 +10,3 @@ app:
     - ${config}:/config
     - ${transcode}:/transcode
     - ${data}:/data
-  labels:
-    depot.lb.link: true
-    depot.lb.port: 32400
-    depot.app.type: plexpass
