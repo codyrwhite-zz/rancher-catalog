@@ -1,11 +1,10 @@
 app:
   restart: always
-  image: plexinc/pms-docker:plexpass
+  image: "plexinc/pms-docker:plexpass"
   ports:
     - "32400:32400/tcp"
   cap_drop:
     - NET_ADMIN
-  volume_driver: nfs-driver
   volumes:
     - ${config}:/config
     - ${transcode}:/transcode
